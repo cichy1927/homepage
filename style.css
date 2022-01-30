@@ -1,0 +1,30 @@
+body {
+    background: #fefefe69;
+}
+section {
+    background: #9c8db1;
+}
+.main-heading {
+    color: darkslateblue;
+}
+.secondary-heading {
+    color: #b0d8ff;
+} 
+.third-heading {
+    color: #2fbd22;
+}
+p {
+    color: #32275c;
+}
+#top{
+    background:lightgoldenrodyellow;
+}
+a {
+    color:#26012b
+}
+nav a { 
+    color:rgb(139, 255, 249);
+}
+.header {
+    background: #4b4b4b
+}
