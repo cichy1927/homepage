@@ -1,28 +1,69 @@
 body {
-    background: #fefefe69;
+  background: #fefefe69;
 }
-section {
-    background: #9c8db1;
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.main-heading {
-    color: darkslateblue;
+.main__header {
+  color: rgb(24, 58, 37);
+  background: #e8f5d7;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 5px;
 }
-.secondary-heading {
-    color: #b0d8ff;
-} 
-.third-heading {
-    color: #2fbd22;
+.introduction__heading {
+  color: #038d25;
 }
-
-#top{
-    background:lightgoldenrodyellow;
+.introduction__link {
+  color: #0461be;
+}
+.notes__heading {
+  color: #038d25;
 }
 a {
-    color:#01212b
+  color: #01212b;
 }
-nav a { 
-    color:rgb(139, 255, 249);
+nav a {
+  color: rgb(139, 255, 249);
 }
-.header {
-    background: #4b4b4b
+
+.navigation {
+  background: #04af12d5;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.navigation__link {
+  color: #fff;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation__link--homepage {
+  background: yellow;
+  color: #000;
+}
+.about {
+  border: 1px #01212b solid;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.about--special {
+  padding: 16px;
+  border: 1px #9c5353 solid;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.about__description {
+  color: #01212b;
+}
+.about__title {
+  color: #033970;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
 }

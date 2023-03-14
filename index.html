@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <nav>
-            <a href="index.html">STRONA GŁÓWNA</a>
-            <a href="nauka-html.html">NAUKA HTML-a</a>
-            <a href="nauka-css.html">NAUKA CSS</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >STRONA GŁÓWNA</a
+        >
+        <a class="navigation__link" href="nauka-html.html">NAUKA HTML-a</a>
+        <a class="navigation__link" href="nauka-css.html">NAUKA CSS</a>
+      </nav>
     </header>
-    <main>
-        <header id="top">
-            <h1 class="main-heading">Bartek Kryścio - Strona Domowa - nauka WTF</h1>
-        </header>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading main__heading--js" id="name">
+          Bartek Kryścio - Strona Domowa - nauka WTF 2023
+        </h1>
+      </header>
 
-        <section>
-            <h2 class="secondary-heading">Kim jestem?</h2>
-            <img src="me.jpg" alt="Śpiewający Bartek" width="30%" height="30%"/>
-            <p>Cześć, Mam 35 lat i na codzień zajmuje się ochroną ppoż i takim tam podobnym. W wolnym czasie trochę
-            śpiewam, gram na klawiszach i uczę się frontendu. <a href="#myself">WIĘCEJ O MNIE</a></p>
-        </section>
+      <section class="introduction">
+        <h2 class="introduction__heading">Kim jestem?</h2>
+        <img
+          class="introduction__picture"
+          src="me.jpg"
+          alt="Śpiewający Bartek"
+          width="30%"
+          height="30%"
+        />
+        <p class="introduction__description">
+          Cześć, Mam 36 lat i na codzień zajmuje się ochroną ppoż i takim tam
+          podobnym. W wolnym czasie trochę śpiewam, gram na klawiszach i uczę
+          się frontendu. <a class="introduction__link" href="#myself">WIĘCEJ O MNIE</a>
+        </p>
+      </section>
 
-        <section id="myself">
-            <h2 class="secondary-heading">Trochę więcej o mnie:</h2>
-            <article> 
-                <h3>Rodzina</h3>
-                <p>Mam kochającą żonę Kamilę, dwójkę cudownych urwisów - Tymka i Julka oraz małą księżniczkę Liliankę. Mieszkamy sobie w nowo-wybudowanym
-                domu na osiedlu Dojlidy Górne w Białymstoku</p>
-            </article>
-            <article>
-                <h3 class="third-heading">Po co uczę się frontendu?</h3>
-                <p>Chciałbym znaleźć kilka źródeł dochodu, nie ograniczać się tylko do pracy na etacie. Może nawet kiedyś
-                uda się zacząć coś robić samemu? <br> Jeszcze jestem w takim wieku że można spróbować czegoś nowego i temu
-                właśnie postanowiłem nauczyć się programować :)</p>
-            </article>
-        </section> 
-
-
-
-       
+      <section class="notes" id="myself">
+        <h2 class="notes__heading">Trochę więcej o mnie:</h2>
+        <article class="about about--special">
+          <h3 class="about__title">Rodzina</h3>
+          <p class="about__description">
+            Mam kochającą żonę Kamilę, dwójkę cudownych urwisów - Tymka i Julka
+            oraz małą księżniczkę Liliankę. Mieszkamy sobie w nowo-wybudowanym
+            domu na osiedlu Dojlidy Górne w Białymstoku
+          </p>
+        </article>
+        <article class="about">
+          <h3 class="about__title">Po co uczę się frontendu?</h3>
+          <p class="about__description">
+            Chciałbym znaleźć kilka źródeł dochodu, nie ograniczać się tylko do
+            pracy na etacie. Może nawet kiedyś uda się zacząć coś robić samemu?
+            <br />
+            Do emerytury mam jeszcze 30 lat, więc jestem w takim wieku że można spróbować czegoś nowego i temu
+            właśnie postanowiłem nauczyć się programować :)
+          </p>
+          <p class="about__description about__description--js"></p>
+        </article>
+      </section>
     </main>
-    <footer>
-        Strona domowa Bartka Kryścio, wszystkie treści są efektem nauki frontendu 2022
+    <footer class="footer">
+      Strona domowa Bartka Kryścio, wszystkie treści są efektem nauki frontendu
+      2023
     </footer>
-    <script src="main.js">
-    </script>
-</body>
-
-</html>  
+    <script src="main.js"></script>
+  </body>
+</html>
