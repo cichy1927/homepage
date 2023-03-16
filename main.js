@@ -1,7 +1,6 @@
 const firstName = "Bartek";
 const age = 36;
 
-
 function calculate(myNumber) {
   console.log(`Mój numer to: ${myNumber}`);
   return myNumber * 7;
@@ -16,8 +15,21 @@ function greet(age, firstName) {
 greet(age, firstName);
 
 function createContent(querySelectorContent, content) {
-    const element = document.querySelector(querySelectorContent);
-    element.innerHTML = content;
+  const element = document.querySelector(querySelectorContent);
+  element.innerHTML = content;
 }
 
-createContent('.about__description--js', 'Witaj świecie!')
+createContent(".about__description--js", "Witaj świecie!");
+
+const button = document.querySelector(".action--js");
+button.addEventListener("click", () => {
+  const heading = document.querySelector(".main__heading--js");
+  heading.innerHTML = `Witaj drogi Odwiedzający, nazywam się Bartek`;
+});
+
+const hamburger = document.querySelector(".hamburger--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
