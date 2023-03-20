@@ -1,101 +1,123 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 body {
   background-color: #cddde4;
   background-image: linear-gradient(160deg, #cddde4 0%, #f3fbfb 100%);
-  font-family: Arial, Helvetica, sans-serif; }
-
+  font-family: Arial, Helvetica, sans-serif;
+}
 .main {
   max-width: 1000px;
-  margin: 60px auto 0; }
-  .main__header {
-    color: #183a25;
+  margin: 60px auto 0;
+  &__header {
+    color: rgb(24, 58, 37);
     padding: 8px;
     border-radius: 8px;
-    margin-top: 5px; }
-
+    margin-top: 5px;
+  }
+}
 .header {
   background: #f5fcfc;
   min-height: 60px;
   position: fixed;
   top: 0;
-  width: 100%; }
-
-.introduction__heading {
-  color: #038d25; }
-
-.introduction__link {
-  color: #0461be; }
-
-.introduction__picture {
-  display: block;
-  max-width: 100%; }
-
-.notes__heading {
-  color: #038d25; }
-
+  width: 100%;
+}
+.introduction {
+  &__heading {
+    color: #038d25;
+  }
+  &__link {
+    color: #0461be;
+  }
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+}
+.notes {
+  &__heading {
+    color: #038d25;
+  }
+}
 a {
-  color: #01212b; }
-
+  color: #01212b;
+}
 nav a {
-  color: #8bfff9; }
+  color: rgb(139, 255, 249);
+}
 
 .navigation {
   padding: 16px;
-  display: none; }
-  .navigation__link {
+  display: none;
+  &__link {
     color: #033970;
     display: block;
-    margin: 0 0 16px; }
-  .navigation__link--homepage {
-    color: #000; }
-  .navigation--open {
-    display: block; }
+    margin: 0 0 16px;
+  }
+  &__link--homepage {
+    color: #000;
+  }
+  &--open {
+    display: block;
+  }
+}
 
 .about {
   border: 1px #01212b solid;
   border-radius: 8px;
   margin-bottom: 16px;
   padding: 16px;
-  background: #f5fcfc; }
-  .about--special {
+  background: #f5fcfc;
+  &--special {
     padding: 16px;
     border: 1px #9c5353 solid;
     border-radius: 8px;
     margin-bottom: 16px;
-    background: #f5fcfc; }
-  .about__description {
-    color: #01212b; }
-  .about__title {
-    color: #033970; }
+    background: #f5fcfc;
+  }
+  &__description {
+    color: #01212b;
+  }
+  &__title {
+    color: #033970;
+  }
+}
 
 .footer {
   max-width: 1000px;
-  margin: 0 auto; }
-
+  margin: 0 auto;
+}
 .hamburger {
   position: absolute;
   top: 17px;
   right: 12px;
   background: none;
-  border: none; }
-
+  border: none;
+}
+.grid {
+}
 @media (min-width: 768px) {
   .hamburger {
-    display: none; }
+    display: none;
+  }
   .navigation {
     padding: 16px;
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 16px; } }
+    column-gap: 16px;
+  }
+}
