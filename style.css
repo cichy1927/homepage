@@ -29,6 +29,14 @@ body {
 
 .introduction__heading {
   color: #038d25; }
+  .introduction__heading::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #9c5353; }
 
 .introduction__link {
   color: #0461be; }

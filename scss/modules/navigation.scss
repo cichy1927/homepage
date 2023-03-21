@@ -1,0 +1,15 @@
+.navigation {
+    padding: 16px;
+    display: none;
+    &__link {
+      color: #033970;
+      display: block;
+      margin: 0 0 16px;
+    }
+    &__link--homepage {
+      color: #000;
+    }
+    &--open {
+      display: block;
+    }
+  }

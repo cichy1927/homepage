@@ -1,0 +1,20 @@
+.about {
+    border: 1px #01212b solid;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background: #f5fcfc;
+    &--special {
+      padding: 16px;
+      border: 1px #9c5353 solid;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: #f5fcfc;
+    }
+    &__description {
+      color: #01212b;
+    }
+    &__title {
+      color: #033970;
+    }
+  }

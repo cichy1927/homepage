@@ -1,3 +1,7 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import "modules/about.scss";
+@import "modules/introduction.scss";
+@import "modules/navigation.scss";
 html {
   box-sizing: border-box;
 }
@@ -29,18 +33,7 @@ body {
   top: 0;
   width: 100%;
 }
-.introduction {
-  &__heading {
-    color: #038d25;
-  }
-  &__link {
-    color: #0461be;
-  }
-  &__picture {
-    display: block;
-    max-width: 100%;
-  }
-}
+
 .notes {
   &__heading {
     color: #038d25;
@@ -51,43 +44,6 @@ a {
 }
 nav a {
   color: rgb(139, 255, 249);
-}
-
-.navigation {
-  padding: 16px;
-  display: none;
-  &__link {
-    color: #033970;
-    display: block;
-    margin: 0 0 16px;
-  }
-  &__link--homepage {
-    color: #000;
-  }
-  &--open {
-    display: block;
-  }
-}
-
-.about {
-  border: 1px #01212b solid;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  padding: 16px;
-  background: #f5fcfc;
-  &--special {
-    padding: 16px;
-    border: 1px #9c5353 solid;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    background: #f5fcfc;
-  }
-  &__description {
-    color: #01212b;
-  }
-  &__title {
-    color: #033970;
-  }
 }
 
 .footer {
@@ -101,8 +57,7 @@ nav a {
   background: none;
   border: none;
 }
-.grid {
-}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;

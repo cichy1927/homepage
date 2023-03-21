@@ -1,0 +1,21 @@
+.introduction {
+    &__heading {
+      color: #038d25;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: #9c5353;
+      }
+    }
+    &__link {
+      color: #0461be;
+    }
+    &__picture {
+      display: block;
+      max-width: 100%;
+    }
+  }
